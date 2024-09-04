@@ -132,7 +132,7 @@ const deleteStudent = async (req, res) => {
       return response(res, 200, 0, "Please provide a valid id!!!", null);
     }
     try {
-      const data = await student.deleteOne({ _id: id });
+      await student.deleteOne({ _id: id });
     } catch (err) {
       console.log(err);
       return response(res, 200, 0, "Database Error!!!", null, null);

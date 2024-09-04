@@ -5,11 +5,7 @@ const marksSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  studentName: {
-    type: String,
-    required: true,
-  },
-  teacherName: {
+  teacherId: {
     type: String,
     required: true,
   },
